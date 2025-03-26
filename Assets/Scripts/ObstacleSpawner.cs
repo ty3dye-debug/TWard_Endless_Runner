@@ -5,14 +5,13 @@ using UnityEngine;
 public class ObstacleSpawner : MonoBehaviour
 {
 
-    [SerializeField] private GameObject obstacle;
+    [SerializeField] private List<GameObject> obstaclePrefabs;
     [SerializeField] private float obstacleSpeed = 3f;
+    [SerializeField] private float spawnTimeMinimum = 2f;
+    [SerializeField] private float spawnTimeMaximum = 5f;
 
-
-    void Start()
-    {
-        
-    }
+    public float obstacleSpawnTime = 2f;
+    private float timeUntilObstacleSpawn;
 
     void Update()
     {
@@ -20,17 +19,29 @@ public class ObstacleSpawner : MonoBehaviour
         {
             Spawn();
         }
+
+        SpawnLoop();
     }
 
 
     private void SpawnLoop()
     {
+        timeUntilObstacleSpawn += Time.deltaTime;
+
+        if(timeUntilObstacleSpawn >= obstacleSpawnTime)
+        {
+            Spawn();
+            obstacleSpawnTime = Random.Range(spawnTimeMinimum, spawnTimeMaximum);
+            timeUntilObstacleSpawn = 0f;
+        }
 
     }
 
     private void Spawn()
     {
-        GameObject spawnedObstacle = Instantiate(obstacle, transform.position, Quaternion.identity);
+        GameObject obstacleSpawn = obstaclePrefabs[Random.Range(0, obstaclePrefabs.Count)];
+
+        GameObject spawnedObstacle = Instantiate(obstacleSpawn, transform.position, Quaternion.identity);
         
         Rigidbody2D obstacleRB = spawnedObstacle.GetComponent<Rigidbody2D>();
 
