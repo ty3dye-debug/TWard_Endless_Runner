@@ -57,5 +57,15 @@ public class PlayerMovement : MonoBehaviour
             jumpTimer = 0f;
         }
 
+        if (Input.GetButtonDown("Fire2"))
+        {
+            GameManager.Instance.PauseObstacles();
+        }
+
+        if (Input.GetButtonUp("Fire2"))
+        {
+            GameManager.Instance.ResumeObstacles();
+        }
+
     }
 }

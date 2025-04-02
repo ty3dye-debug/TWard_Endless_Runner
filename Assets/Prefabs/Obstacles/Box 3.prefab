@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 1416117341620507168}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -0.0218, z: 10.022672}
-  m_LocalScale: {x: 0.42027503, y: 0.2149501, z: 1}
+  m_LocalPosition: {x: -0.0135, y: 0.1083, z: 10.022672}
+  m_LocalScale: {x: 0.26755333, y: 0.23052412, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 695604758641364859}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9b82e783e735b3d44a761c24018cb732, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 11ada3dfe6fc41a4da996ef85f550a10, type: 3}
   m_Color: {r: 0.509434, g: 0.44920772, b: 0.3258455, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 360123744472325022}
   - component: {fileID: 5255520033470487041}
   m_Layer: 6
-  m_Name: Box 1
+  m_Name: Box 3
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,8 +111,8 @@ Transform:
   m_GameObject: {fileID: 7976168975013120646}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1265511128493116040}

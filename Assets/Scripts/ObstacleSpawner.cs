@@ -13,14 +13,20 @@ public class ObstacleSpawner : MonoBehaviour
     public float obstacleSpawnTime = 2f;
     private float timeUntilObstacleSpawn;
 
+    public bool canSpawn = true;
+
     void Update()
     {
         if(Input.GetKeyUp(KeyCode.P))
         {
             Spawn();
         }
-
-        SpawnLoop();
+       
+        if(GameManager.Instance.canSpawn == true)
+        {
+            SpawnLoop();
+        }
+        
     }
 
 
@@ -46,5 +52,11 @@ public class ObstacleSpawner : MonoBehaviour
         Rigidbody2D obstacleRB = spawnedObstacle.GetComponent<Rigidbody2D>();
 
         obstacleRB.velocity = Vector2.left * obstacleSpeed;
+
+        GameManager.Instance.currentObstcleSpeed = obstacleSpeed;
+
+        GameManager.Instance.activeObstacles.Add(spawnedObstacle);
+
+        spawnedObstacle.AddComponent<DestroyObstacle>();
     }
 }
