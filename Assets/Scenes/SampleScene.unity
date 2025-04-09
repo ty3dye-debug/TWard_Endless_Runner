@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8663856}
   - component: {fileID: 8663857}
+  - component: {fileID: 8663858}
   m_Layer: 0
   m_Name: Runner Background (CLOUDS) (1)
   m_TagString: Untagged
@@ -206,6 +207,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8663858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8663855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 2
 --- !u!1 &118888628
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 118888629}
   - component: {fileID: 118888630}
+  - component: {fileID: 118888631}
   m_Layer: 0
   m_Name: Runner Background (CLOUDS)
   m_TagString: Untagged
@@ -290,6 +306,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &118888631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118888628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 2
 --- !u!4 &152437018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7559170051252699716, guid: faad9bd0507c59641bbaac85b4d857cd, type: 3}
@@ -305,6 +335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 252491231}
   - component: {fileID: 252491232}
+  - component: {fileID: 252491233}
   m_Layer: 0
   m_Name: Runner Background (CLOUDS) (2)
   m_TagString: Untagged
@@ -379,6 +410,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &252491233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252491230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 2
 --- !u!1 &396726704
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 396726705}
   - component: {fileID: 396726706}
+  - component: {fileID: 396726707}
   m_Layer: 0
   m_Name: Runner Background (FRONT)
   m_TagString: Untagged
@@ -463,6 +509,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &396726707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396726704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 5
 --- !u!1 &399200177
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,6 +533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 399200178}
   - component: {fileID: 399200179}
+  - component: {fileID: 399200180}
   m_Layer: 0
   m_Name: Runner Background (SKY) (1)
   m_TagString: Untagged
@@ -547,6 +608,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &399200180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399200177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 1
 --- !u!1 &412565731
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,6 +1081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 775049604}
   - component: {fileID: 775049605}
+  - component: {fileID: 775049606}
   m_Layer: 0
   m_Name: Runner Background (HILLS) (1)
   m_TagString: Untagged
@@ -1080,6 +1156,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &775049606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775049603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 3
 --- !u!1 &864518160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,6 +1180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 864518161}
   - component: {fileID: 864518162}
+  - component: {fileID: 864518163}
   m_Layer: 0
   m_Name: Runner Background (HILLS) (2)
   m_TagString: Untagged
@@ -1164,6 +1255,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &864518163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864518160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 3
 --- !u!1 &922164012
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,6 +1313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 961847197}
   - component: {fileID: 961847198}
+  - component: {fileID: 961847199}
   m_Layer: 0
   m_Name: Runner Background (BACK) (2)
   m_TagString: Untagged
@@ -1282,6 +1388,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &961847199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961847196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 4
 --- !u!1 &962343248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,6 +1446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1006973432}
   - component: {fileID: 1006973433}
+  - component: {fileID: 1006973434}
   m_Layer: 0
   m_Name: Runner Background (SKY)
   m_TagString: Untagged
@@ -1400,6 +1521,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1006973434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006973431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 1
 --- !u!1 &1015465205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,6 +1579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1084698064}
   - component: {fileID: 1084698065}
+  - component: {fileID: 1084698066}
   m_Layer: 0
   m_Name: Runner Background (BACK) (1)
   m_TagString: Untagged
@@ -1518,6 +1654,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1084698066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084698063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 4
 --- !u!1 &1122567948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,6 +1764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1248547348}
   - component: {fileID: 1248547347}
+  - component: {fileID: 1248547349}
   m_Layer: 12
   m_Name: Runner Background (FRAME)
   m_TagString: Untagged
@@ -1688,6 +1839,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1261833756}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1248547349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248547346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 6
 --- !u!1 &1249275533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,6 +1863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249275534}
   - component: {fileID: 1249275535}
+  - component: {fileID: 1249275536}
   m_Layer: 0
   m_Name: Runner Background (FRONT) (1)
   m_TagString: Untagged
@@ -1772,6 +1938,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1249275536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249275533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 5
 --- !u!1 &1261833755
 GameObject:
   m_ObjectHideFlags: 0
@@ -1976,6 +2156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1781849464}
   - component: {fileID: 1781849465}
+  - component: {fileID: 1781849466}
   m_Layer: 0
   m_Name: Runner Background (BACK)
   m_TagString: Untagged
@@ -2050,6 +2231,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1781849466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781849463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 4
 --- !u!1 &1863086308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2208,6 +2403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2009599787}
   - component: {fileID: 2009599788}
+  - component: {fileID: 2009599789}
   m_Layer: 12
   m_Name: Runner Background (FRAME) (2)
   m_TagString: Untagged
@@ -2282,6 +2478,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2009599789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009599786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 6
 --- !u!1 &2023916930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,6 +2618,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2033071929}
   - component: {fileID: 2033071930}
+  - component: {fileID: 2033071931}
   m_Layer: 12
   m_Name: Runner Background (FRAME) (1)
   m_TagString: Untagged
@@ -2482,6 +2693,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2033071931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033071928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 6
 --- !u!1 &2053110241
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,6 +2717,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2053110242}
   - component: {fileID: 2053110243}
+  - component: {fileID: 2053110244}
   m_Layer: 0
   m_Name: Runner Background (HILLS)
   m_TagString: Untagged
@@ -2566,6 +2792,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2053110244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053110241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 3
 --- !u!1 &2097391498
 GameObject:
   m_ObjectHideFlags: 0
@@ -2576,6 +2816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2097391499}
   - component: {fileID: 2097391500}
+  - component: {fileID: 2097391501}
   m_Layer: 0
   m_Name: Runner Background (SKY) (2)
   m_TagString: Untagged
@@ -2650,6 +2891,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2097391501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097391498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 1
 --- !u!1 &2104532822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,6 +2915,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2104532823}
   - component: {fileID: 2104532824}
+  - component: {fileID: 2104532825}
   m_Layer: 0
   m_Name: Runner Background (FRONT) (2)
   m_TagString: Untagged
@@ -2734,6 +2990,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2104532825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104532822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sizeOfSprite: 0
+  backgroundMoveSpeed: 5
 --- !u!1001 &5023312418825443364
 PrefabInstance:
   m_ObjectHideFlags: 0
