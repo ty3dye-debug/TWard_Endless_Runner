@@ -1,14 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
-using System;
-//using System.Runtime.CompilerServices;
+using UnityEngine;
 
-public class UIManager : MonoBehaviour
+public class UserInterfaceManager : MonoBehaviour
 {
-
-    public static UIManager Instance;
+    public static UserInterfaceManager Instance;
 
     [SerializeField] private TextMeshProUGUI scoreDisplay;
     [SerializeField] private GameObject gameOverPanel;
@@ -31,14 +28,14 @@ public class UIManager : MonoBehaviour
 
     public void GameOverDisplay()
     {
-        if (gameOverPanel.activeSelf == true)
-        {
-            gameOverPanel.SetActive(false);
-        }
-        else
-        {
-            gameOverPanel.SetActive(true);
-        }
+        /*  if (gameOverPanel.activeSelf == true)
+          {
+              gameOverPanel.SetActive(false);
+          }
+          else
+          {
+              gameOverPanel.SetActive(true);
+          }*/
 
         Debug.Log(gameOverPanel.name);
     }

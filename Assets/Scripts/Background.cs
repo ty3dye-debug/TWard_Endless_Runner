@@ -4,36 +4,19 @@ using UnityEngine;
 
 public class Background : MonoBehaviour
 {
-    public Camera _camera;
-    [SerializeField] private float sizeOfSprite, backgroundMoveSpeed;
-    private float _spriteStartPosition;
-
+    [SerializeField] private float moveSpeed = 1f;
+    private float spriteWidth;
+    private Vector3 startPosition;
 
     void Start()
     {
-        _camera = Camera.main;
-        sizeOfSprite = GetComponent<SpriteRenderer>().bounds.size.x;
-        _spriteStartPosition = transform.position.x;
+        startPosition = transform.position;
+        spriteWidth = GetComponent<SpriteRenderer>().bounds.size.x;
     }
 
-    
     void Update()
     {
-        var cameraPos = _camera.transform.position.x;
-        var temp = cameraPos * (1 - backgroundMoveSpeed);
-        var distance = cameraPos * backgroundMoveSpeed;
-
-        var newPosition = new Vector2(_spriteStartPosition + distance, transform.position.y);
-
-        transform.position = newPosition;
-
-        if(temp > _spriteStartPosition + (sizeOfSprite / 2))
-        {
-            _spriteStartPosition += sizeOfSprite;
-        }
-        else if(temp < _spriteStartPosition + (sizeOfSprite / 2))
-        {
-            _spriteStartPosition -= sizeOfSprite;
-        }
+        float newX = Mathf.Repeat(Time.time * moveSpeed, spriteWidth);
+        transform.position = startPosition + Vector3.left * newX;
     }
 }

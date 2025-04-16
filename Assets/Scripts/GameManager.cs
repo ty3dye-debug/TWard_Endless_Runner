@@ -60,6 +60,13 @@ public class GameManager : MonoBehaviour
         UIManager.Instance.GameOverDisplay();
     }
 
+    public void GameOverCheck()
+    {
+        //if (currentHealth <= 0)
+        {
+            //GameOver();
+        }
+    }
 
 
     public void ResetGame()

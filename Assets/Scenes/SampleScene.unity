@@ -219,9 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 2
+  moveSpeed: 0.5
 --- !u!1 &118888628
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,9 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 2
+  moveSpeed: 0.5
 --- !u!4 &152437018 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7559170051252699716, guid: faad9bd0507c59641bbaac85b4d857cd, type: 3}
@@ -424,9 +420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 2
+  moveSpeed: 0.5
 --- !u!1 &396726704
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,9 +518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 5
+  moveSpeed: 1.25
 --- !u!1 &399200177
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,9 +616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 30
-  backgroundMoveSpeed: 1
+  moveSpeed: 0
 --- !u!1 &412565731
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,9 +1163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 3
+  moveSpeed: 0.75
 --- !u!1 &864518160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,9 +1261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 3
+  moveSpeed: 0.75
 --- !u!1 &922164012
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,9 +1527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 4
+  moveSpeed: 1
 --- !u!1 &962343248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,9 +1659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 1
+  moveSpeed: 0
 --- !u!1 &1015465205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,9 +1791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 4
+  moveSpeed: 1
 --- !u!1 &1122567948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,9 +1975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 6
+  moveSpeed: 1.5
 --- !u!1 &1249275533
 GameObject:
   m_ObjectHideFlags: 0
@@ -2095,9 +2073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 5
+  moveSpeed: 1.25
 --- !u!1 &1261833755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,9 +2458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 4
+  moveSpeed: 1
 --- !u!1 &1820665437
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,7 +2564,6 @@ GameObject:
   - component: {fileID: 1863086309}
   - component: {fileID: 1863086311}
   - component: {fileID: 1863086310}
-  - component: {fileID: 1863086312}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -2714,20 +2687,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863086308}
   m_CullTransparentMesh: 1
---- !u!114 &1863086312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863086308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 504012e80af105449bb173d175f549a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreDisplay: {fileID: 1863086310}
-  gameOverPanel: {fileID: 0}
 --- !u!1 &2009599786
 GameObject:
   m_ObjectHideFlags: 0
@@ -2825,9 +2784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 6
+  moveSpeed: 1.5
 --- !u!1 &2023916930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2862,6 +2819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreDisplay: {fileID: 1863086310}
   gameOverPanel: {fileID: 2058525105}
+  gameOver: {fileID: 2058525105}
 --- !u!114 &2023916932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3044,9 +3002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 6
+  moveSpeed: 1.5
 --- !u!1 &2053110241
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,9 +3100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 3
+  moveSpeed: 0.75
 --- !u!1 &2058525105
 GameObject:
   m_ObjectHideFlags: 0
@@ -3484,9 +3438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 1
+  moveSpeed: 0
 --- !u!1 &2104532822
 GameObject:
   m_ObjectHideFlags: 0
@@ -3584,9 +3536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ea92c91c4d2d64399c2d0d2a7daa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  sizeOfSprite: 0
-  backgroundMoveSpeed: 5
+  moveSpeed: 1.25
 --- !u!1001 &5023312418825443364
 PrefabInstance:
   m_ObjectHideFlags: 0
