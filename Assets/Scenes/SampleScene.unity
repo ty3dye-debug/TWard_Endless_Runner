@@ -2043,6 +2043,7 @@ MonoBehaviour:
   playerRB: {fileID: 0}
   jumpForce: 10
   jumpTime: 0.3
+  fastFallSpeed: 20
   feetPos: {fileID: 152437018}
   groundLayer:
     serializedVersion: 2
@@ -2524,7 +2525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 504012e80af105449bb173d175f549a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreDisplay: {fileID: 0}
+  scoreDisplay: {fileID: 1863086310}
 --- !u!114 &2023916932
 MonoBehaviour:
   m_ObjectHideFlags: 0
