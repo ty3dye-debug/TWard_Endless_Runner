@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
             playerRB.velocity = new Vector2(playerRB.velocity.x, -slamFallSpeed);
             slamFalling = true;
         }
-
+        
 
 
         if (Input.GetButtonDown("Fire2"))

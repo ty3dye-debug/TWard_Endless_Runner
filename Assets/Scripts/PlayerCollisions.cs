@@ -11,6 +11,7 @@ public class PlayerCollisions : MonoBehaviour
             collision.gameObject.SetActive(false);
             GameManager.Instance.isPlaying = false;
             GameManager.Instance.PauseObstacles();
+
         }
     }
 

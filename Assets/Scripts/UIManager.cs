@@ -7,12 +7,37 @@ using System.Runtime.CompilerServices;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI scoreDisplay;
-    [SerializeField]
 
+    public static UIManager Instance;
+
+    [SerializeField] private TextMeshProUGUI scoreDisplay;
+    [SerializeField] public GameObject gameOverPanel;
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+    }
+
+    private void Start()
+    {
+        GameOverDisplay();
+    }
 
     private void OnGUI()
     {
         scoreDisplay.text = GameManager.Instance.ScoreDisplay();
+    }
+
+    public void GameOverDisplay()
+    {
+        if(gameOverPanel.activeSelf == true)
+        {
+            gameOverPanel.SetActive(false);
+        }
+
+        else
+        {
+            gameOverPanel.SetActive(true);
+        }
     }
 }

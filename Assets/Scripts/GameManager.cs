@@ -28,14 +28,23 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+      //SCORE
         if(isPlaying == true)
         {
             currentScore += Time.deltaTime;
         }
-        
-        if(Input.GetKeyDown("j"))
+      //RESET  
+        if(Input.GetKeyDown("r"))
         {
-            ResetGame();
+            if(isPlaying == true)
+            {
+                ResetGame();
+            }
+            else
+            {
+                ResetGame();
+                UIManager.Instance.GameOverDisplay();
+            }
         }
     }
 
@@ -48,6 +57,7 @@ public class GameManager : MonoBehaviour
     {
         currentScore = 0;
         isPlaying = false;
+        UIManager.Instance.GameOverDisplay();
     }
 
 

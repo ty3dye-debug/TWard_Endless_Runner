@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Background : MonoBehaviour
 {
-    private Camera _camera;
+    public Camera _camera;
     [SerializeField] private float sizeOfSprite, backgroundMoveSpeed;
     private float _spriteStartPosition;
 
