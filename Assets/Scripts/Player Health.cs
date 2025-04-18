@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField]
-    private HealthUI healthBar;
-    public float maxHealth;
-    public float currentHealth;
+    public static PlayerHealth Instance;
 
-    public float damage;
-    public float healing;
+    public float maxHealth = 3f;
+    public float currentHealth = 3f;
+
+    public float damage = 1f;
+    public float healing = 1f;
 
 
     private void Start()
@@ -48,16 +48,13 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    
-
-    private void OnTriggerEnter2D(Collider2D collision) //How you die, that's it
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        //TO DO Set up when health is 0 make Game Over
-        /*if (collision.gameObject.GetComponent<ObstacleSpawner>() || collision.gameObject.GetComponent < null > ())
+        if (collision.transform.tag == "Obstacle")
         {
             DamageHealth();
-            //GameManager.Instance.GameOverCheck();
-        }*/
+            GameManager.Instance.GameOverCheck();
+        }
     }
 }
 

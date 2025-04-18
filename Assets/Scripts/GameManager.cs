@@ -57,14 +57,16 @@ public class GameManager : MonoBehaviour
     {
         currentScore = 0;
         isPlaying = false;
+        PauseObstacles();
         UIManager.Instance.GameOverDisplay();
     }
 
     public void GameOverCheck()
     {
-        //if (currentHealth <= 0)
+
+        if (PlayerHealth.Instance.currentHealth <= 0)
         {
-            //GameOver();
+            GameOver();
         }
     }
 
