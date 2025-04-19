@@ -8,6 +8,8 @@ public class Background : MonoBehaviour
     private float spriteWidth;
     private Vector3 startPosition;
 
+    //private bool isMoving = true;
+
     void Start()
     {
         startPosition = transform.position;
@@ -16,7 +18,19 @@ public class Background : MonoBehaviour
 
     void Update()
     {
+        //if (!isMoving) return;
+
         float newX = Mathf.Repeat(Time.time * moveSpeed, spriteWidth);
         transform.position = startPosition + Vector3.left * newX;
     }
+
+    /*public void PauseBackground()
+    {
+        isMoving = false;
+    }
+
+    public void ResumeBackground()
+    {
+        isMoving = true;
+    }*/
 }

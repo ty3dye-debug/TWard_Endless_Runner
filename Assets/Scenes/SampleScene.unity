@@ -1863,6 +1863,7 @@ MonoBehaviour:
   currentObstcleSpeed: 0
   maxObstacleSpeed: 0
   canSpawn: 1
+  currentHealth: {fileID: 1445480857}
 --- !u!4 &1144636634
 Transform:
   m_ObjectHideFlags: 0

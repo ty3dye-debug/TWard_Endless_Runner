@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
 
     public bool canSpawn = true;
 
+    public PlayerHealth currentHealth;
+
+    //public Background background;
+
     void Update()
     {
       //SCORE
@@ -58,6 +62,7 @@ public class GameManager : MonoBehaviour
         currentScore = 0;
         isPlaying = false;
         PauseObstacles();
+        //background.PauseBackground();
         UIManager.Instance.GameOverDisplay();
     }
 
@@ -83,6 +88,7 @@ public class GameManager : MonoBehaviour
         }
         activeObstacles.Clear();
         ResumeObstacles();
+        //background.ResumeBackground();
     }
 
     public void PauseObstacles()

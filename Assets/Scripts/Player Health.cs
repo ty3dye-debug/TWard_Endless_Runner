@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,12 +13,15 @@ public class PlayerHealth : MonoBehaviour
     public float damage = 1f;
     public float healing = 1f;
 
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+    }
 
-    private void Start()
+    void Start()
     {
         currentHealth = maxHealth;
     }
-
 
     private void Update()
     {
