@@ -59,7 +59,6 @@ public class GameManager : MonoBehaviour
     
     public void GameOver()
     {
-        currentScore = 0;
         isPlaying = false;
         PauseObstacles();
         //background.PauseBackground();

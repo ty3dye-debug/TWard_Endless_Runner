@@ -2163,10 +2163,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07652f6ef86c96740896a9ecc4c584e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRB: {fileID: 0}
+  playerRB: {fileID: 1445480859}
   jumpForce: 10
   jumpTime: 0.3
   slamFallSpeed: 20
+  rollDuration: 2
+  rollCooldown: 5
+  playerSprite: {fileID: 1728943705}
+  rollSprite: {fileID: 0}
+  normalSprite: {fileID: 0}
   feetPos: {fileID: 152437018}
   groundLayer:
     serializedVersion: 2
@@ -2187,6 +2192,11 @@ MonoBehaviour:
   currentHealth: 3
   damage: 1
   healing: 1
+--- !u!50 &1445480859 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 376474567521063465, guid: faad9bd0507c59641bbaac85b4d857cd, type: 3}
+  m_PrefabInstance: {fileID: 5023312418825443364}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1456174232
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,6 +2284,11 @@ Transform:
   - {fileID: 864518161}
   m_Father: {fileID: 1315338821}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1728943705 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2288495869836469649, guid: faad9bd0507c59641bbaac85b4d857cd, type: 3}
+  m_PrefabInstance: {fileID: 5023312418825443364}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1781849463
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,12 +10,21 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float jumpTime = 0.3f;
     [SerializeField] private float slamFallSpeed = 20f;
+    [SerializeField] private float rollDuration = 2f;
+    [SerializeField] private float rollCooldown = 5f;
+    [SerializeField] private SpriteRenderer playerSprite; // Could also use animator
+    [SerializeField] private Sprite rollSprite;
+    [SerializeField] private Sprite normalSprite;
     [SerializeField] private Transform feetPos;  //where the feet at?
     [SerializeField] private LayerMask groundLayer; //what layer of objects as the ground?
     private bool onGround;
     private bool isJumping;
     private bool hasJumped;
     private bool slamFalling;
+    private bool isRolling = false;
+    private bool canSlam = true;
+    private float rollTimer = 0f;
+    private float cooldownTimer = 0f;
     private float jumpTimer;
     
 
@@ -28,6 +37,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Physics2D.OverlapCircle(feetPos.position,0.25f,groundLayer) == true)
         {
+            if (!onGround && slamFalling && canSlam)
+            {
+                StartRoll();
+            }
+
             onGround = true;
             hasJumped = false;
             slamFalling = false;
@@ -71,8 +85,54 @@ public class PlayerMovement : MonoBehaviour
             playerRB.velocity = new Vector2(playerRB.velocity.x, -slamFallSpeed);
             slamFalling = true;
         }
-        
 
+        // Roll Timer
+        if (isRolling)
+        {
+            rollTimer -= Time.deltaTime;
+            if (rollTimer <= 0f)
+            {
+                EndRoll();
+            }
+        }
+
+        // Cooldown
+        if (!canSlam)
+        {
+            cooldownTimer -= Time.deltaTime;
+            if (cooldownTimer <= 0f)
+            {
+                canSlam = true;
+            }
+        }
+
+        //ROLLING CODE
+
+        void StartRoll()
+        {
+            isRolling = true;
+            canSlam = false;
+            rollTimer = rollDuration;
+            cooldownTimer = rollCooldown;
+
+            // Swap
+            if(playerSprite.sprite != null) playerSprite.sprite = rollSprite;
+
+
+            // Disable obstacle collisions
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Obstacle"), true);
+        }
+
+        void EndRoll()
+        {
+            isRolling = false;
+
+            // Revert Swap
+            playerSprite.sprite = normalSprite;
+
+            // Turn on collisions
+            Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("Obstacle"), false);
+        }
 
         if (Input.GetButtonDown("Fire2"))
         {
