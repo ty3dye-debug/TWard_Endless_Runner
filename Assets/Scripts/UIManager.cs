@@ -7,21 +7,58 @@ using System;
 
 public class UIManager : MonoBehaviour
 {
-
     public static UIManager Instance;
 
     [SerializeField] private TextMeshProUGUI scoreDisplay;
     [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] private GameObject gameOver;
+    [SerializeField] private GameObject titleScreen;
 
     private void Awake()
     {
-        if (Instance == null) Instance = this;
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject); // Prevent duplicate instances
+
+        HideGameOver();
+        ShowTitleScreen();
+        Debug.Log("Awake: Hiding game over and showing title screen");
+        Debug.Log("gameOverPanel active? " + gameOverPanel.activeSelf);
     }
 
     private void Start()
     {
-        GameOverDisplay();
+        Debug.Log("Start: Forcing title screen ON and game over panel OFF");
+        HideGameOver();
+        ShowTitleScreen();
+
+        Debug.Log("Title screen active: " + titleScreen.activeSelf);
+        Debug.Log("Game over panel active: " + gameOverPanel.activeSelf);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            Debug.Log("Z pressed - trying to start game");
+
+            UIManager.Instance.HideGameOver();
+            UIManager.Instance.HideTitleScreen();
+
+            GameManager.Instance.isPlaying = true;
+            Debug.Log("isPlaying set to: " + GameManager.Instance.isPlaying);
+
+            GameManager.Instance.ResetGame();
+        }
+
+        if (gameOverPanel.activeSelf)
+        {
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                HideGameOver();
+                ShowTitleScreen();
+            }
+        }
     }
 
     private void OnGUI()
@@ -29,17 +66,23 @@ public class UIManager : MonoBehaviour
         scoreDisplay.text = GameManager.Instance.ScoreDisplay();
     }
 
-    public void GameOverDisplay()
+    public void ShowGameOver()
     {
-        if (gameOverPanel.activeSelf == true)
-        {
-            gameOverPanel.SetActive(false);
-        }
-        else
-        {
-            gameOverPanel.SetActive(true);
-        }
+        gameOverPanel.SetActive(true);
+    }
 
-        Debug.Log(gameOverPanel.name);
+    public void HideGameOver()
+    {
+        gameOverPanel.SetActive(false);
+    }
+
+    public void ShowTitleScreen()
+    {
+        titleScreen.SetActive(true);
+    }
+
+    public void HideTitleScreen()
+    {
+        titleScreen.SetActive(false);
     }
 }

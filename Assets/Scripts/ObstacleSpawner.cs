@@ -21,20 +21,20 @@ public class ObstacleSpawner : MonoBehaviour
         {
             Spawn();
         }
-       
-        if(GameManager.Instance.canSpawn == true)
+
+        if (GameManager.Instance.isPlaying && GameManager.Instance.canSpawn)
         {
             SpawnLoop();
         }
-        
     }
 
 
     private void SpawnLoop()
     {
         timeUntilObstacleSpawn += Time.deltaTime;
+        Debug.Log("Spawning loop running...");
 
-        if(timeUntilObstacleSpawn >= obstacleSpawnTime)
+        if (timeUntilObstacleSpawn >= obstacleSpawnTime)
         {
             Spawn();
             obstacleSpawnTime = Random.Range(spawnTimeMinimum, spawnTimeMaximum);
